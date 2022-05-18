@@ -2,8 +2,13 @@ import React from 'react';
 import Card from '../Card';
 import { Thumbnail } from '../Thumbnail';
 import { Link } from 'react-router-dom';
+import { Product } from '../types/Product';
 
-export const ProductListRow = ({ product }) => {
+interface Props {
+  product: Product;
+}
+
+export const ProductListRow = ({ product }: Props) => {
   return (
     <Card
       style={{
